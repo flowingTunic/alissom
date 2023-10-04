@@ -1,0 +1,14 @@
+{
+    "lar123": {
+        "nome": "laraja",
+        "quantidade": 56,
+        "preco": "7.5",
+        "disponibilidade": true
+    },
+    "pes123": {
+        "nome": "pessego",
+        "quantidade": 86,
+        "preco": "7.5",
+        "disponibilidade": true
+    }
+}

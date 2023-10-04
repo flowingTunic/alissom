@@ -1,0 +1,53 @@
+"""
+https://docs.google.com/presentation/d/1CyRyPlGy2cu_s68mp33b7FZEjcSraW6XaXjk2Nawzac/edit?usp=sharing
+Dada a lista = [12, -2, 4, 8, 29, 45, 78, 36, -17, 2, 12, 8, 3, 3, -52] faça um programa que:
+a) imprima o maior elemento
+b) imprima o menor elemento
+c) imprima os números pares
+d) imprima o número de ocorrências do primeiro elemento da lista
+e) imprima a média dos elementos
+f) imprima a soma dos elementos de valor negativo
+"""
+print('='*30)
+lista = [12, -2, 4, 8, 29, 45, 78, 36, -17, 2, 12, 8, 3, 3, -52]
+valor = lista[0]
+# (a)
+for i in (lista):
+     if i > valor:
+          valor = i
+print(valor)
+print('='*30)
+lista = [12, -2, 4, 8, 29, 45, 78, 36, -17, 2, 12, 8, 3, 3, -52]
+valor = lista[0]
+for i in lista:
+     if i < valor:
+          valor = i
+print(valor)
+print('='*30)
+lista = [12, -2, 4, 8, 29, 45, 78, 36, -17, 2, 12, 8, 3, 3, -52]
+pares = []
+for i in lista:
+     if i%2 == 0:
+          pares.append(i)
+print(pares)
+print("="*30)
+lista = [12, -2, 4, 8, 29, 45, 78, 36, -17, 2, 12, 8, 3, 3, -52]
+elemento = 0
+for oco in lista:
+     if oco == lista[0]:
+          elemento = elemento + 1
+print(f"o numero de ocorencias e de {elemento}")
+print("="*30)
+totalmedia = 0
+for media in lista:
+     totalmedia = totalmedia + media
+mediafinal = totalmedia / len(lista)
+print(f"a media da lista é {mediafinal:.2f}")
+print("="*30)
+
+totalsoma = 0
+for soma in lista:
+     if soma < 0:
+          totalsoma = soma + totalsoma
+print(f"total da soma da lista é iqual {totalsoma}")
+          
