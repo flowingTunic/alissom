@@ -40,6 +40,16 @@ print("Número total de alunos:", len(turma))
 #_nota entre 4 e 6 -> "Verificacao Suplementar"
 #_nota abaixo de 4 -> "Reprovado"
 
-nome = input("digite seu nome")
-nota = input("digite sua nota de 0 a 10 ")
+def mediaA(nome, nota):
+    nota = float(nota)
+    if nota > 6:
+        return f"(nome) aprovado"
+    elif 4 <= nota <= 6:
+        return f"(nome) verificação suplementar"
+nome = input("escreva o nome")
+nota = input("escreva o valor da nota")
+
+verificar = mediaA(nome, nota)
+print (f"o alono {nome}, {verificar}")
+    
     
