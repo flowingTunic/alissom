@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Extrato Bancário</title>
+</head>
+<body>
+  <h1>Extrato Bancário</h1>
+
+  <label for="dataTransacao">Data da Transação:</label>
+  <input type="date" id="dataTransacao" required>
+
+  <label for="descricao">Descrição:</label>
+  <input type="text" id="descricao" required>
+
+  <label for="valor">Valor:</label>
+  <input type="number" id="valor" required>
+
+  <label for="saldo">Saldo:</label>
+  <input type="number" id="saldo" required>
+
+  <label for="numeroConta">Número da Conta:</label>
+  <input type="text" id="numeroConta" required>
+
+  <button type="button" onclick="inserirTransacao()">Inserir Transação</button>
+  <button type="button" onclick="listarTransacoes()">Listar Transações</button>
+
+  <br>
+
+  <table border="1" width="100%" id="tabelaTransacoes"></table>
+
+  <script src="transacao.js"></script>
+</body>
+</html>
+
+
+
+
+
